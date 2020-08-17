@@ -1,17 +1,35 @@
 @import "./src/components/main/mixins";
 @import "./src/components/main/variable";
-
 .header{
+  width: 100vw;
   display: flex;
   justify-content: space-between;
   align-content: center;
-  padding: 20px 50px;
+  border-radius: 5px;
+  padding: 20px 20%;
   box-shadow: 0 8px  20px 5px $second-color;
   transition: 2s;
+  position: fixed;
+  top: 0;
+  left: 0;
+  @include desktop{
+    box-shadow: none;
+    padding: 20px 30px;
+    justify-content: space-between;
+  }
+  &__component{
+    background-color: transparent;
+    width: 100%;
+    height: 260px;
+  }
   &__logo{
     width: 100px;
     height: 100px;
     background: red;
+    @include desktop{
+      width: 200px;
+      height: 200px;
+    }
   }
   &__hamburger{
     cursor: pointer;
@@ -34,26 +52,49 @@
   &__navigation{
     display: block;
     position: absolute;
-    top: 10%;
-    right: -10%;
-    transition: 1s;
+    top: 200px;
+    right: -40%;
+    transition: 2s;
+    @include desktop{
+      position: relative;
+      top: 0;
+      right: 0;
+    }
     &__list{
-      margin-left: 80%;
+      @include desktop{
+        display: flex;
+        margin: auto;
+      }
       &__element{
+        @include desktop{
+          margin: 0 20px;
+        }
         a{
           color: $active-color;
           font-size: 2rem;
           text-decoration: none;
-          text-shadow:1px 1px 10px $second-color, 0 0 2rem $second-color
+          text-shadow:1px 1px 10px $second-color, 0 0 2rem $second-color;
+          padding: 10px 20px;
+          @include desktop{
+            color: $second-color;
+          }
+          &:hover{
+            color: $active-color;
+            transition: 1s;
+          }
         }
       }
     }
   }
 }
 
+.header__compontent{
+  width: 150%;
+}
+
 .active{
   &__header{
-    box-shadow: 0 8px  20px 5px $active-color;
+    box-shadow: 0 10px  20px 5px $active-color;
   }
   &__hamburger {
     span:nth-child(1) {
@@ -74,7 +115,7 @@
   }
   &__navigation{
     position: absolute;
-    top: 10%;
+    top: 200px;
     right: 15%;
   }
 }

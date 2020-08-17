@@ -13,7 +13,30 @@ const Header = () =>{
     }
 
     if(window.innerWidth >= 1024){
-        console.log("xd")
+        return(
+            <header className="header">
+                <div className="header__content">
+                    <nav className="header__navigation">
+                        <ul className="header__navigation__list">
+                            <li className="header__navigation__list__element"><a href="#">Main</a></li>
+                            <li className="header__navigation__list__element"><a href="#">Rums</a></li>
+                        </ul>
+                    </nav>
+                    <div className="header__component"></div>
+                </div>
+                <div className="header__logo"></div>
+                <div className="header__content">
+                    <nav className="header__navigation">
+                        <ul className="header__navigation__list">
+                            <li className="header__navigation__list__element"><a href="#">Tasting</a></li>
+                            <li className="header__navigation__list__element"><a href="#">Footer</a></li>
+                        </ul>
+                    </nav>
+                    <div className="header__component"></div>
+                </div>
+            </header>
+
+        )
     }else{
         return(
             <>
