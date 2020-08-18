@@ -1,0 +1,11 @@
+@import "./src/components/main/variable";
+@import "./src/components/main/mixins";
+
+.main{
+  width: 100vw;
+  @include desktop{
+    height: 100vh;
+    background-color: $main-color;
+  }
+
+}

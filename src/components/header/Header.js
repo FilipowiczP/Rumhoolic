@@ -18,21 +18,40 @@ const Header = () =>{
                 <div className="header__content">
                     <nav className="header__navigation">
                         <ul className="header__navigation__list">
-                            <li className="header__navigation__list__element"><a href="#">Main</a></li>
-                            <li className="header__navigation__list__element"><a href="#">Rums</a></li>
+                            <li className="header__navigation__list__element"><a href="#main">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                Main</a></li>
+                            <li className="header__navigation__list__element"><a href="#rums">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                Rums</a></li>
                         </ul>
                     </nav>
-                    <div className="header__component"></div>
                 </div>
                 <div className="header__logo"></div>
                 <div className="header__content">
                     <nav className="header__navigation">
                         <ul className="header__navigation__list">
-                            <li className="header__navigation__list__element"><a href="#">Tasting</a></li>
-                            <li className="header__navigation__list__element"><a href="#">Footer</a></li>
+                            <li className="header__navigation__list__element"><a href="#tasting">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                Tasting
+                            </a></li>
+                            <li className="header__navigation__list__element"><a href="#footer">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                Footer</a></li>
                         </ul>
                     </nav>
-                    <div className="header__component"></div>
                 </div>
             </header>
 
@@ -50,10 +69,10 @@ const Header = () =>{
                 </header>
                 <nav className={active ? "header__navigation active__navigation" : "header__navigation"}>
                         <ul className="header__navigation__list">
-                            <li className="header__navigation__list__element"><a href="#">Main</a></li>
-                            <li className="header__navigation__list__element"><a href="#">Rums</a></li>
-                            <li className="header__navigation__list__element"><a href="#">Tasting</a></li>
-                            <li className="header__navigation__list__element"><a href="#">Footer</a></li>
+                            <li className="header__navigation__list__element"><a href="#main">Main</a></li>
+                            <li className="header__navigation__list__element"><a href="#rums">Rums</a></li>
+                            <li className="header__navigation__list__element"><a href="#tasting">Tasting</a></li>
+                            <li className="header__navigation__list__element"><a href="#footer">Footer</a></li>
                         </ul>
                 </nav>
             </>
