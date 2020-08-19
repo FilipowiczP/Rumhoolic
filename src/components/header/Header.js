@@ -15,59 +15,47 @@ const Header = () =>{
     if(window.innerWidth >= 1024){
         return(
             <header className="header">
-                <div className="header__content">
-                    <nav className="header__navigation">
-                        <ul className="header__navigation__list">
-                            <li className="header__navigation__list__element"><a href="#main">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                Main</a></li>
-                            <li className="header__navigation__list__element"><a href="#rums">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                Rums</a>
-                            </li>  <li className="header__navigation__list__element"><a href="#events">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                Events</a></li>
-                        </ul>
-                    </nav>
-                </div>
+                <nav className="header__navigation">
+                    <ul className="header__navigation__list">
+                        <li className="header__navigation__list__element"><a href="#main">
+                            <span className="animation"></span>
+                            <span className="animation"></span>
+                            <span className="animation"></span>
+                            <span className="animation"></span>
+                            Głó<span className="contact__color">wna</span></a></li>
+                        <li className="header__navigation__list__element"><a href="#rums">
+                            <span className="animation"></span>
+                            <span className="animation"></span>
+                            <span className="animation"></span>
+                            <span className="animation"></span>
+                            Ru<span className="contact__color">my</span></a>
+                        </li>  <li className="header__navigation__list__element"><a href="#events">
+                        <span className="animation"></span>
+                        <span className="animation"></span>
+                        <span className="animation"></span>
+                        <span className="animation"></span>
+                            Wydarz<span className="contact__color">enia</span></a></li>
+                    </ul>
+                </nav>
                 <div className="header__logo"></div>
-                <div className="header__content">
-                    <nav className="header__navigation">
-                        <ul className="header__navigation__list">
-                            <li className="header__navigation__list__element"><a href="#interviews">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                Interviews
-                            </a></li>
-                            <li className="header__navigation__list__element"><a href="#tasting">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                Tasting
-                            </a></li>
-                            <li className="header__navigation__list__element"><a href="#footer">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                Footer</a></li>
-                        </ul>
-                    </nav>
-                </div>
+                <nav className="header__navigation">
+                    <ul className="header__navigation__list">
+                        <li className="header__navigation__list__element"><a href="#tasting">
+                            <span className="animation"></span>
+                            <span className="animation"></span>
+                            <span className="animation"></span>
+                            <span className="animation"></span>
+                            Degus<span className="contact__color">tacja</span>
+                        </a></li>
+                        <li className="header__navigation__list__element"><a href="#footer">
+                            <span className="animation"></span>
+                            <span className="animation"></span>
+                            <span className="animation"></span>
+                            <span className="animation"></span>
+                            Sto<span className="contact__color">pka</span></a></li>
+                    </ul>
+                </nav>
             </header>
-
         )
     }else{
         return(
@@ -82,12 +70,11 @@ const Header = () =>{
                 </header>
                 <nav className={active ? "header__navigation active__navigation" : "header__navigation"}>
                         <ul className="header__navigation__list">
-                            <li className="header__navigation__list__element"><a href="#main">Main</a></li>
-                            <li className="header__navigation__list__element"><a href="#rums">Rums</a></li>
-                            <li className="header__navigation__list__element"><a href="#rums">Events</a></li>
-                            <li className="header__navigation__list__element"><a href="#rums">Interviews</a></li>
-                            <li className="header__navigation__list__element"><a href="#tasting">Tasting</a></li>
-                            <li className="header__navigation__list__element"><a href="#footer">Footer</a></li>
+                            <li className="header__navigation__list__element"><a href="#main">Głó<span className="contact__color">wna</span></a></li>
+                            <li className="header__navigation__list__element"><a href="#rums">Ru<span className="contact__color">my</span></a></li>
+                            <li className="header__navigation__list__element"><a href="#rums">Wydarz<span className="contact__color">enia</span></a></li>
+                            <li className="header__navigation__list__element"><a href="#tasting">Degus<span className="contact__color">tacja</span></a></li>
+                            <li className="header__navigation__list__element"><a href="#footer">Sto<span className="contact__color">pka</span></a></li>
                         </ul>
                 </nav>
             </>

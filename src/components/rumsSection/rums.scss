@@ -5,7 +5,7 @@
   width: 100vw;
   @include desktop{
     height: 100vh;
-    background-color: $active-color;
+    background-color: $main-content;
   }
 
 }

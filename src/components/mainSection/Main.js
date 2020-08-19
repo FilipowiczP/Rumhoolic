@@ -2,8 +2,8 @@ import React from "react";
 import './main.scss';
 const Main = () =>{
     return (
-        <main id="main" className="main">
-        </main>
+        <section id="main" className="main">
+        </section>
     )
 }
 

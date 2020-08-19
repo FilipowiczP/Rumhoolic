@@ -5,19 +5,20 @@ import Main from "./components/mainSection/Main";
 import Rums from "./components/rumsSection/Rums";
 import Tasting from "./components/tasting/Tasting";
 import Footer from "./components/footer/Footer";
-import Events from "./components/events/Events";
-import Interviews from "./components/interviews/Interviews";
+import Events from "./components/eventsSection/Events";
+
 
 const App = () =>{
 
   return(
       <>
         <Header />
-        <Main />
-        <Rums />
-        <Events />
-        <Interviews />
-        <Tasting />
+        <main>
+            <Main />
+            <Rums />
+            <Events />
+            <Tasting />
+        </main>
         <Footer />
       </>
   )
