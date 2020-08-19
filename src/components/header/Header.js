@@ -29,7 +29,13 @@ const Header = () =>{
                                 <span></span>
                                 <span></span>
                                 <span></span>
-                                Rums</a></li>
+                                Rums</a>
+                            </li>  <li className="header__navigation__list__element"><a href="#events">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                Events</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -37,6 +43,13 @@ const Header = () =>{
                 <div className="header__content">
                     <nav className="header__navigation">
                         <ul className="header__navigation__list">
+                            <li className="header__navigation__list__element"><a href="#interviews">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                Interviews
+                            </a></li>
                             <li className="header__navigation__list__element"><a href="#tasting">
                                 <span></span>
                                 <span></span>
@@ -71,6 +84,8 @@ const Header = () =>{
                         <ul className="header__navigation__list">
                             <li className="header__navigation__list__element"><a href="#main">Main</a></li>
                             <li className="header__navigation__list__element"><a href="#rums">Rums</a></li>
+                            <li className="header__navigation__list__element"><a href="#rums">Events</a></li>
+                            <li className="header__navigation__list__element"><a href="#rums">Interviews</a></li>
                             <li className="header__navigation__list__element"><a href="#tasting">Tasting</a></li>
                             <li className="header__navigation__list__element"><a href="#footer">Footer</a></li>
                         </ul>

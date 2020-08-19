@@ -4,7 +4,7 @@ import "./footer.scss";
 const Footer = () =>{
 
     return(
-        <section id="footer" className="footer"></section>
+        <footer id="footer" className="footer"></footer>
     )
 }
 
