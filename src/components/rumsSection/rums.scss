@@ -3,9 +3,36 @@
 
 .rums{
   width: 100vw;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 50px 50px;
   @include desktop{
     height: 100vh;
-    background-color: $main-content;
+    background-color: $main-color;
   }
-
+  &__info{
+    transition: 2s;
+    position: absolute;
+    background-color: red;
+    top: 0;
+    left: -100%;
+    width: 100vw;
+    @include desktop{
+      height: 100vh;
+    }
+  }
+  &__content{
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+    margin: 10px;
+  }
+}
+.test{
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  cursor: pointer;
 }

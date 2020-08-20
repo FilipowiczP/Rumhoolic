@@ -14,14 +14,15 @@
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 2;
   @include desktop{
       box-shadow: none;
       padding: 20px 30px;
+      background: transparent;
   }
   &__logo{
     width: 100px;
     height: 100px;
-    background: red;
     @include desktop{
       width: 200px;
       height: 200px;
@@ -49,7 +50,7 @@
     display: block;
     position: absolute;
     top: 200px;
-    right: -40%;
+    right: -50%;
     transition: 2s;
     @include desktop{
       position: relative;
@@ -63,7 +64,7 @@
       &__element{
         list-style: none;
         overflow: hidden;
-        margin: 0 20px;
+        margin: 10px 20px;
         @include desktop{
           position: relative;
           display: flex;

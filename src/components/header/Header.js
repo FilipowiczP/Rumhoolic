@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import './header.scss';
+import logo from '../rumsSection/images/logo1.png';
 
 const Header = () =>{
     const[active, setActive] = useState(false);
@@ -37,7 +38,7 @@ const Header = () =>{
                             Wydarz<span className="contact__color">enia</span></a></li>
                     </ul>
                 </nav>
-                <div className="header__logo"></div>
+                <img src={logo} alt="logo" width="300px" height="300px" className="header__logo"/>
                 <nav className="header__navigation">
                     <ul className="header__navigation__list">
                         <li className="header__navigation__list__element"><a href="#tasting">
@@ -61,14 +62,13 @@ const Header = () =>{
         return(
             <>
                 <header className={active ? "header active__header": "header"}>
-                    <div className="header__logo"></div>
+                    <img src={logo} width="100px" height="100px" />
                     <div onClick={handleClick} className={active ? "header__hamburger active__hamburger" : "header__hamburger"}>
                         <span className="header__hamburger__element"></span>
                         <span className="header__hamburger__element"></span>
                         <span className="header__hamburger__element"></span>
                     </div>
-                </header>
-                <nav className={active ? "header__navigation active__navigation" : "header__navigation"}>
+                    <nav className={active ? "header__navigation active__navigation" : "header__navigation"}>
                         <ul className="header__navigation__list">
                             <li className="header__navigation__list__element"><a href="#main">Głó<span className="contact__color">wna</span></a></li>
                             <li className="header__navigation__list__element"><a href="#rums">Ru<span className="contact__color">my</span></a></li>
@@ -76,7 +76,9 @@ const Header = () =>{
                             <li className="header__navigation__list__element"><a href="#tasting">Degus<span className="contact__color">tacja</span></a></li>
                             <li className="header__navigation__list__element"><a href="#footer">Sto<span className="contact__color">pka</span></a></li>
                         </ul>
-                </nav>
+                    </nav>
+                </header>
+
             </>
         )
     }
