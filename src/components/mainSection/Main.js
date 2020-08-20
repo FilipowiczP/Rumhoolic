@@ -1,6 +1,6 @@
 import React from "react";
 import './main.scss';
-import logo1 from '../rumsSection/images/logo1.1.png'
+import logo1 from './logo1.1.jpg'
 
 const Main = () =>{
     return (

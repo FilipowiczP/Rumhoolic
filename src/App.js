@@ -6,6 +6,7 @@ import Rums from "./components/rumsSection/Rums";
 import Tasting from "./components/tasting/Tasting";
 import Footer from "./components/footer/Footer";
 import Events from "./components/eventsSection/Events";
+import Interview from "./components/interviewSection/Interview";
 
 
 const App = () =>{
@@ -17,6 +18,7 @@ const App = () =>{
             <Main />
             <Rums />
             <Events />
+            <Interview />
             <Tasting />
         </main>
         <Footer />

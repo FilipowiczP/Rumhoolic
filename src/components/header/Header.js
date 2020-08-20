@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import './header.scss';
-import logo from '../rumsSection/images/logo1.png';
+import logo from './logo1.jpg';
 
 const Header = () =>{
     const[active, setActive] = useState(false);
@@ -41,6 +41,13 @@ const Header = () =>{
                 <img src={logo} alt="logo" width="300px" height="300px" className="header__logo"/>
                 <nav className="header__navigation">
                     <ul className="header__navigation__list">
+                        <li className="header__navigation__list__element"><a href="#interview">
+                            <span className="animation"></span>
+                            <span className="animation"></span>
+                            <span className="animation"></span>
+                            <span className="animation"></span>
+                            Wywi<span className="contact__color">ady</span>
+                        </a></li>
                         <li className="header__navigation__list__element"><a href="#tasting">
                             <span className="animation"></span>
                             <span className="animation"></span>
@@ -53,7 +60,7 @@ const Header = () =>{
                             <span className="animation"></span>
                             <span className="animation"></span>
                             <span className="animation"></span>
-                            Sto<span className="contact__color">pka</span></a></li>
+                            Kont<span className="contact__color">akt</span></a></li>
                     </ul>
                 </nav>
             </header>
@@ -73,8 +80,9 @@ const Header = () =>{
                             <li className="header__navigation__list__element"><a href="#main">Głó<span className="contact__color">wna</span></a></li>
                             <li className="header__navigation__list__element"><a href="#rums">Ru<span className="contact__color">my</span></a></li>
                             <li className="header__navigation__list__element"><a href="#rums">Wydarz<span className="contact__color">enia</span></a></li>
+                            <li className="header__navigation__list__element"><a href="#interview">Wywi<span className="contact__color">ady</span></a></li>
                             <li className="header__navigation__list__element"><a href="#tasting">Degus<span className="contact__color">tacja</span></a></li>
-                            <li className="header__navigation__list__element"><a href="#footer">Sto<span className="contact__color">pka</span></a></li>
+                            <li className="header__navigation__list__element"><a href="#footer">Kont<span className="contact__color">akt</span></a></li>
                         </ul>
                     </nav>
                 </header>
