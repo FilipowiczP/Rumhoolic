@@ -12,7 +12,6 @@ const Rums = () =>{
         setBoxPosition(0);
         for (let i = 0; i <=rumContent.length; i++){
             if(id === rumContent[i].id){
-                console.log(rumContent[i].text)
                 setBoxContent(rumContent[i])
                 break;
             }

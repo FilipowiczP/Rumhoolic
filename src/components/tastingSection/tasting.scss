@@ -1,0 +1,50 @@
+@import "./src/components/main/variable";
+@import "./src/components/main/mixins";
+.tasting{
+  width: 100vw;
+  padding: 0 30px;
+  @include desktop{
+    height: 100vh;
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+  }
+  &__slider{
+    color: $third-content;
+    cursor: pointer;
+    font-size: 1.3rem;
+    text-align: center;
+    margin: 30px 0;
+    @include desktop{
+      padding: 20px 20px;
+      font-size: 2rem;
+    }
+  }
+  &__content{
+    &__box{
+      margin: 50px 0;
+      display: flex;
+      justify-content: center;
+    }
+  }
+  &__color{
+    color: $second-content;
+  }
+  &__foto{
+    width: 500px;
+    height: 550px;
+  }
+  &__title{
+    font-size: 2.5rem;
+    color: $third-content;
+  }
+  &__text{
+    color: $third-content;
+    font-size: 1.3rem;
+    &__heading{
+      font-size: 1.8rem;
+    }
+  }
+}

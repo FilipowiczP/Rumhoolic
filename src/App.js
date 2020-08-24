@@ -3,7 +3,7 @@ import './components/main/reset.scss'
 import Header from "./components/header/Header";
 import Main from "./components/mainSection/Main";
 import Rums from "./components/rumsSection/Rums";
-import Tasting from "./components/tasting/Tasting";
+import Tasting from "./components/tastingSection/Tasting";
 import Footer from "./components/footer/Footer";
 import Events from "./components/eventsSection/Events";
 import Interview from "./components/interviewSection/Interview";
