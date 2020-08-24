@@ -4,26 +4,39 @@ import tastingContent from "./tastingContent.";
 
 const Tasting = () =>{
 
-    const [slider, setSlider] = useState(0)
+    const [slider, setSlider] = useState(0);
+    const [contentSlider, setContentSlider] = useState(0);
 
     useEffect(()=>{
         const intervalID = setInterval(()=>{
-            if(tastingContent[0].fotos.length === slider){
-                setSlider(0)
-            }
-            setSlider((slider) => slider + 1)
-            console.log(slider);
-            
+            setSlider(slider => slider + 1);  
+            if(tastingContent[0].fotos.length - 2 < slider){
+                setSlider(0);
+            };
         }, 2000);
-        return clearInterval(intervalID);
-    },[])
+        return () => clearInterval(intervalID);
+    },[slider])
+
+    const handleNext = () => {
+        setContentSlider((prevState)=>prevState + 1)
+        if(contentSlider >= tastingContent.length){
+            setContentSlider(0);
+        }
+    }
+
+    const handlePrev = () =>{
+        setContentSlider((prevState)=>prevState - 1)
+        if(contentSlider <= 0){
+            setContentSlider(tastingContent.length);
+        }
+    }
 
     return(
         <section id="tasting" className="tasting">
-            <p className="tasting__slider">Poprz<span className="tasting__color">edni</span></p>
+            <p className="tasting__slider" onClick={handlePrev}>Poprz<span className="tasting__color">edni</span></p>
             {tastingContent.map(({id, fotos, text}) =>{
                 return (
-                    <div className="tasting__content" key={id} data-tasting={id}>
+                    <div className="tasting__content" key={id} data-tasting={id} style={{display: contentSlider == id ? "block" : "none"}}>
                         <h1 className="tasting__title">{text.name}</h1>
                         <div className="tasting__content__box">
                             <img className="tasting__foto" src={fotos[slider]}/>
@@ -35,7 +48,7 @@ const Tasting = () =>{
                     </div>
                 )
             })}
-            <p className="tasting__slider">Nastę<span className="tasting__color">pny</span></p>
+            <p className="tasting__slider" onClick={handleNext}>Nastę<span className="tasting__color">pny</span></p>
         </section>
     )
 }
