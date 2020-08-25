@@ -10,7 +10,7 @@ const Tasting = () =>{
     useEffect(()=>{
         const intervalID = setInterval(()=>{
             setSlider(slider => slider + 1);  
-            if(tastingContent[0].fotos.length - 2 < slider){
+            if(tastingContent[contentSlider].fotos.length - 2 < slider){
                 setSlider(0);
             };
         }, 2000);
@@ -18,16 +18,18 @@ const Tasting = () =>{
     },[slider])
 
     const handleNext = () => {
+        setSlider(0);
         setContentSlider((prevState)=>prevState + 1)
-        if(contentSlider >= tastingContent.length){
+        if(contentSlider >= tastingContent.length - 1){
             setContentSlider(0);
         }
     }
 
     const handlePrev = () =>{
+        setSlider(0);
         setContentSlider((prevState)=>prevState - 1)
-        if(contentSlider <= 0){
-            setContentSlider(tastingContent.length);
+        if(contentSlider === 0){
+            setContentSlider(tastingContent.length -1);
         }
     }
 
