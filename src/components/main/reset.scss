@@ -1,4 +1,4 @@
-@import "variable";
+@import "variable.scss";
 *{
   margin: 0;
   padding: 0;
@@ -11,4 +11,11 @@ body{
   font-family: 'League Gothic';
   background: $main-color;
   overflow-x: hidden;
+}
+::-webkit-scrollbar{
+  width: 12px;
+}
+::-webkit-scrollbar-thumb{
+  background: linear-gradient($second-content, $third-content);
+  border-radius: 10px;
 }
