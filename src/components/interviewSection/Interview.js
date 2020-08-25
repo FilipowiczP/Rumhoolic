@@ -31,13 +31,12 @@ const Interview = () =>{
                     <div key={id} className="interview__content">
 
                         <div className="interview__box">
-                            <h1 className="interview__text">{text.title}</h1>
+                            <h1 className="interview__title">{text.title}</h1>
                             <h2 className="interview__text">{text.start}</h2>
                              {text.content.map(({question, answer})=>{
                                 return (
                                     <>
-                        
-                                        <p className="interview__text">{question}</p>
+                                        <p className="interview__text interview__question ">{question}</p>
                                         <p className="interview__text">{answer}</p>
                                     </>
                                 )

@@ -50,9 +50,25 @@
       
     }
   }
+  &__title{
+    font-size: 2.5rem;
+    color: $third-content;
+    @include desktop{
+      text-align: center;
+      margin: 20px 0;
+    }
+  }
   &__text{
     color: $third-content;
     margin: 20px;
-   
+    font-size: 1.3rem;   
+    @include desktop{
+      font-size: 1.2rem;
+      font-weight: 300;
+    }
+  }
+  &__question{
+    font-size: 1.5rem;
+    font-weight: 500;
   }
 }
