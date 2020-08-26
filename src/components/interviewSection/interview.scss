@@ -44,10 +44,8 @@
     width: 90%;
     margin: auto;
     @include desktop{
-      position: relative;
       height: 80vh;
       overflow-y: scroll;
-      
     }
   }
   &__title{

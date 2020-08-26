@@ -11,7 +11,6 @@ const Interview = () =>{
         if(contentSlider >= interviews.length - 1){
             setContentSlider(0);
         }
-        console.log(contentSlider);
     }
 
     const handlePrev = () =>{
@@ -19,7 +18,6 @@ const Interview = () =>{
         if(contentSlider === 0){
             setContentSlider(interviews.length -1);
         }
-        console.log(contentSlider);
     }
 
     return(

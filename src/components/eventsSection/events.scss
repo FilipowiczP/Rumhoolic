@@ -5,6 +5,66 @@
   width: 100vw;
   @include desktop{
     height: 100vh;
-    background-color: green;
+    height: 100vh;
+    background-color: $main-color;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__slider{
+    color: $third-content;
+    cursor: pointer;
+    font-size: 1.3rem;
+    text-align: center;
+    margin: 30px 0;
+    font-size: 2rem;
+    @include desktop{
+      padding: 20px 20px;
+    }
+  }
+  &__color{
+    color: $second-content;
+  }
+  &__content{
+    @include desktop{
+      display: flex;
+    }
+    &__box{
+      width: 90%;
+      margin: auto;
+      @include desktop{
+        height: 80vh;
+        overflow-y: scroll;
+      }
+    }
+  }
+  &__foto{
+    margin: auto;
+    display: block;
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+    @include desktop{
+      width: 400px;
+      height: 400px;
+    }
+  }
+  
+  &__title{
+    font-size: 2.5rem;
+    color: $third-content;
+    @include desktop{
+      text-align: center;
+      margin: 20px 0;
+    }
+  }
+  &__text{
+    color: $third-content;
+    margin: 20px;
+    font-size: 1.3rem;   
+    @include desktop{
+      font-size: 1.2rem;
+      font-weight: 300;
+    }
   }
 }
