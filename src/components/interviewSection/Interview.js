@@ -19,9 +19,37 @@ const Interview = () =>{
             setContentSlider(interviews.length -1);
         }
     }
-
-    return(
-        <section id="interview" className="interview">
+    if(window.innerWidth >= 1024){
+        return(
+            <section id="interview" className="interview">
+                <p className="interview__slider" onClick={handlePrev}>Poprz<span className="interview__color">edni</span></p>
+                {interviews.map(({id, foto, text})=>{
+                    return(
+                        
+                        <div key={id} className={contentSlider == id ? "interview__content animate__show" : "interview__content animate__hide"}>
+                            <div className="interview__box">
+                                <h1 className="interview__title">{text.title}</h1>
+                                <h2 className="interview__text">{text.start}</h2>
+                                {text.content.map(({question, answer}, i)=>{
+                                    return (
+                                        <div key={i}>
+                                            <p className="interview__text interview__question ">{question}</p>
+                                            <p className="interview__text">{answer}</p>
+                                        </div>
+                                    )
+                                })}
+                            </div>
+                            <img src={foto} alt="foto" className="interview__foto" />
+                        </div>
+                    )
+                })}
+                <p className="interview__slider" onClick={handleNext}>Kolej<span className="interview__color">ny</span></p>
+            </section>
+        )
+    }else{
+        return(
+            <section id="interview" className="interview">
+            <p className="interview__slider" onClick={handleNext}>Kolej<span className="interview__color">ny</span></p>
             <p className="interview__slider" onClick={handlePrev}>Poprz<span className="interview__color">edni</span></p>
             {interviews.map(({id, foto, text})=>{
                 return(
@@ -29,8 +57,8 @@ const Interview = () =>{
                     <div key={id} className={contentSlider == id ? "interview__content animate__show" : "interview__content animate__hide"}>
                         <div className="interview__box">
                             <h1 className="interview__title">{text.title}</h1>
-                            <h2 className="interview__text">{text.start}</h2>
-                             {text.content.map(({question, answer}, i)=>{
+                            <p className="interview__text">{text.start}</p>
+                            {text.content.map(({question, answer}, i)=>{
                                 return (
                                     <div key={i}>
                                         <p className="interview__text interview__question ">{question}</p>
@@ -39,13 +67,13 @@ const Interview = () =>{
                                 )
                             })}
                         </div>
-                         <img src={foto} alt="foto" className="interview__foto" />
+                        <img src={foto} alt="foto" className="interview__foto" />
                     </div>
                 )
             })}
-            <p className="interview__slider" onClick={handleNext}>Nastę<span className="interview__color">pny</span></p>
-        </section>
-    )
+            </section>
+        )
+    }
 }
 
 export default Interview;

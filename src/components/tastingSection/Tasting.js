@@ -32,27 +32,58 @@ const Tasting = () =>{
             setContentSlider(tastingContent.length -1);
         }
     }
-
-    return(
-        <section id="tasting" className="tasting">
-            <p className="tasting__slider" onClick={handlePrev}>Poprz<span className="tasting__color">edni</span></p>
-            {tastingContent.map(({id, fotos, text}) =>{
-                return (
-                    <div className={contentSlider == id ? "tasting__content animate__show" : "tasting__content animate__hide"} key={id} data-tasting={id} >
-                        <h1 className="tasting__title">{text.name}</h1>
-                        <div className="tasting__content__box">
-                            <img className="tasting__foto" src={fotos[slider]}/>
+    if(window.innerWidth >= 1024){
+        return(
+            <section id="tasting" className="tasting">
+                <p className="tasting__slider" onClick={handlePrev}>Poprz<span className="tasting__color">edni</span></p>
+                {tastingContent.map(({id, fotos, text}) =>{
+                    return (
+                        <div className={contentSlider == id ? "tasting__content animate__show" : "tasting__content animate__hide"} key={id} data-tasting={id} >
+                            <h1 className="tasting__title">{text.name}</h1>
+                            <div className="tasting__content__box">
+                                <img className="tasting__foto" src={fotos[slider]}/>
+                            </div>
+                            <p className="tasting__text"><span className="tasting__text__heading">Miej<span className="tasting__color">sce:</span></span></p>
+                            <p className="tasting__text">{text.place}</p>
+                            <p className="tasting__text"><span className="tasting__text__heading">Prezen<span className="tasting__color">ter:</span></span></p>
+                            <p className="tasting__text">{text.leader}</p>
+                            <p className="tasting__text"><span className="tasting__text__heading">Degustowane  <span className="tasting__color">rumy:</span></span></p>
+                            <p className="tasting__text">{text.rums}</p>                     
+                            <p className="tasting__text"><span className="tasting__text__heading">Moja  <span className="tasting__color">opinia:</span></span></p>
+                            <p className="tasting__text">{text.opinion}</p>                     
                         </div>
-                        <p className="tasting__text"><span className="tasting__text__heading">Miej<span className="tasting__color">sce:</span></span> {text.place}</p>
-                        <p className="tasting__text"><span className="tasting__text__heading">Prowadz<span className="tasting__color">oący:</span></span> {text.leader}</p>
-                        <p className="tasting__text"><span className="tasting__text__heading">Degustowane  <span className="tasting__color">rumy:</span></span> {text.rums}</p>
-                        <p className="tasting__text"><span className="tasting__text__heading">Moja  <span className="tasting__color">opinia:</span></span> {text.opinion}</p>
-                    </div>
-                )
-            })}
-            <p className="tasting__slider" onClick={handleNext}>Nastę<span className="tasting__color">pny</span></p>
-        </section>
-    )
+                    )
+                })}
+                <p className="tasting__slider" onClick={handleNext}>Kolej<span className="tasting__color">ny</span></p>
+            </section>
+        )
+    }else{
+        return(
+            <section id="tasting" className="tasting">
+                <p className="tasting__slider" onClick={handleNext}>Kolej<span className="tasting__color">ny</span></p>
+                <p className="tasting__slider" onClick={handlePrev}>Poprz<span className="tasting__color">edni</span></p>
+                {tastingContent.map(({id, fotos, text}) =>{
+                    return (
+                        <div className={contentSlider == id ? "tasting__content animate__show" : "tasting__content animate__hide"} key={id} data-tasting={id} >
+                            <h1 className="tasting__title">{text.name}</h1>
+                            <div className="tasting__content__box">
+                                <img className="tasting__foto" src={fotos[slider]}/>
+                            </div>
+                            <p className="tasting__text"><span className="tasting__text__heading">Miej<span className="tasting__color">sce:</span></span></p>
+                            <p className="tasting__text">{text.place}</p>
+                            <p className="tasting__text"><span className="tasting__text__heading">Prezen<span className="tasting__color">ter:</span></span></p>
+                            <p className="tasting__text">{text.leader}</p>
+                            <p className="tasting__text"><span className="tasting__text__heading">Degustowane  <span className="tasting__color">rumy:</span></span></p>
+                            <p className="tasting__text">{text.rums}</p>                     
+                            <p className="tasting__text"><span className="tasting__text__heading">Moja  <span className="tasting__color">opinia:</span></span></p>
+                            <p className="tasting__text">{text.opinion}</p>      
+                        </div>
+                    )
+                })}
+                
+            </section>
+        )
+    }
 }
 
 export default Tasting;

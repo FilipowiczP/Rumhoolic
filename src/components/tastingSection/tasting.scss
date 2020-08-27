@@ -4,7 +4,7 @@
 
 .tasting{
   width: 100vw;
-  padding: 0 30px;
+  padding: 20px 30px;
   @include desktop{
     height: 120vh;
     background-color: $main-color;
@@ -14,15 +14,7 @@
     padding: 10px 20px;
   }
   &__slider{
-    color: $third-content;
-    cursor: pointer;
-    font-size: 1.3rem;
-    text-align: center;
-    margin: 30px 0;
-    font-size: 2rem;
-    @include desktop{
-      padding: 20px 20px;
-    }
+    @include nextPrev;
   }
   &__content{
     &__box{
@@ -44,21 +36,28 @@
     object-fit: contain;
   }
   &__title{
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     color: $third-content;
     text-align: center;
     @include desktop{
       margin: 20px 0;
+      font-size: 2.5rem;
     }
   }
   &__text{
+    font-family: 'Montserrat', sans-serif;
     color: $third-content;
-    font-size: 1.3rem;
+    font-size: 0.8rem;
+    margin: 15px 15px;
     @include desktop{
-      font-size: 1.2rem;
+      font-size: 1rem;
     }
     &__heading{
-      font-size: 1.8rem;
+      font-size: 1rem;
+      font-weight: bold;
+      @include desktop{
+        font-size: 1.5rem;
+      }
     }
   }
 }

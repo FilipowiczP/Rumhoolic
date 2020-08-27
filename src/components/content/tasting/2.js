@@ -3,7 +3,7 @@ const text = {
     place: "Online",
     leader: "Dawid Typa – Country Brand Manager",
     rums: "Dictador 12yo, Dictador 20yo, Dictador XO Perpetual, Dictador XO Insolent oraz Dictador 2 Masters Hardy",
-    opinion:": Ze względu na panującą pandemię koronawirusa, po raz pierwszy zdecydowałem się na wzięcie udziału w degustacji online." +
+    opinion:"Ze względu na panującą pandemię koronawirusa, po raz pierwszy zdecydowałem się na wzięcie udziału w degustacji online." +
      "Szczerze, był to strzał w dziesiątkę – własne domowe zacisze, spokój i możliwość przeżycia fajnych doznań rumowych. Przed " +
      "przestąpieniem do degustacji, Dawid poprosił nas o zaopatrzenie się przed degustacją w pomarańczę, oraz kostki mlecznej czekolady" +
      "– ciekawe bo dotychczas nie zdarzyło mi się eksperymentować z rumem w taki sposób. Również to było dla mnie miłe zaskoczenie." +

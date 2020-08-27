@@ -24,6 +24,7 @@
       background: $main-color;
     }
     &__hide{
+      font-family: 'League Gothic';
       color: $third-content;
       text-transform: uppercase;
       text-align: center;
@@ -44,31 +45,34 @@
   &__foto{
     width: 300px;
     height: 300px;
-    margin: 0 20px;
-    float: left;
+    margin: 15px 20px;
     @include desktop{
+      float: left;
       width: 500px;
       height: 500px;
     }
   }
   &__title{
     color: $third-content;
-    font-size: 2.5rem;
+    font-size: 1.8rem;
   }
   &__text{
     color: $third-content;
-    font-size: 1.3rem;
+    font-size: 0.8rem;
     margin: 15px 0;
     &__heading{
-      font-size: 1.8rem;
+      font-size: 1rem;
+      font-weight: bold;
     }
   }
 }
 .color{
   &__hide{
     color: $second-content;
+
   }
   &__heading{
     color: $second-content;
+    font-weight: bold;
   }
 }

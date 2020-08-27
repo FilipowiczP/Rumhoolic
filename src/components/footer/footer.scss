@@ -10,17 +10,23 @@
   @include desktop{
     height: 30vh;
     background-color: $main-color;
-
   }
   &__text{
     color: $third-content;
     font-weight: 400;
+    font-size: 0.9rem;
+    @include desktop{
+      font-size: 1rem;
+    }
   }
 }
 .instagram{
   text-decoration: none;
   color: $third-content;
-  font-size: 2rem;
+  font-size: 1rem;
+  @include desktop{
+    font-size: 2rem;
+  }
   &__foto{
     width: 100px;
     height: 100px;

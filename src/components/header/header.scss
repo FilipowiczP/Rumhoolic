@@ -3,6 +3,7 @@
 @import "./src/components/main/fonts";
 
 .header{
+  font-family: 'League Gothic';
   width: 100vw;
   display: flex;
   justify-content: space-between;
@@ -15,10 +16,10 @@
   top: 0;
   left: 0;
   z-index: 3;
+  background-color: $main-color;
   @include desktop{
       box-shadow: none;
-      padding: 20px 30px;
-      background: transparent;
+      padding: 0 30px;
   }
   &__logo{
     width: 100px;

@@ -3,3 +3,16 @@
     @content
   }
 }
+
+@mixin nextPrev {
+  font-family: 'League Gothic';
+  color: $third-content;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 20px;
+  cursor: pointer;
+  font-size: 1.8rem;
+  @include desktop{
+    font-size: 2.2rem;
+  }
+}
