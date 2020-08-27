@@ -26,7 +26,7 @@ const Events = () =>{
             <p className="events__slider" onClick={handlePrev}>Poprz<span className="events__color">edni</span></p>
             {eventContent.map(({id, foto, text})=>{
                 return (
-                <div key={id} className="events__content">
+                <div key={id} className={contentSlider == id ? "events__content animate__show" : "events__content animate__hide"}>
                     <img src={foto} alt="foto" className="events__foto" />
                     <div className="events__content__box">
                         <h1 className="events__title">{text.title}</h1>

@@ -1,5 +1,6 @@
 @import "./src/components/main/variable";
 @import "./src/components/main/mixins";
+@import "../main/animation";
 
 .events{
   width: 100vw;
@@ -27,7 +28,7 @@
   }
   &__content{
     @include desktop{
-      display: flex;
+      display: flex !important;
     }
     &__box{
       width: 90%;

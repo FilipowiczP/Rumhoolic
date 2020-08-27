@@ -1,5 +1,6 @@
 @import "./src/components/main/variable";
 @import "./src/components/main/mixins";
+@import "../main/animation";
 
 .interview{
   width: 100vw;
@@ -26,7 +27,7 @@
   }
   &__content{
     @include desktop{
-      display: flex;
+      display: flex; 
     }
   }
   &__foto{

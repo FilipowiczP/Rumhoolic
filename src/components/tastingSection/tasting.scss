@@ -1,5 +1,7 @@
 @import "./src/components/main/variable";
 @import "./src/components/main/mixins";
+@import "../main/animation";
+
 .tasting{
   width: 100vw;
   padding: 0 30px;
@@ -58,26 +60,5 @@
     &__heading{
       font-size: 1.8rem;
     }
-  }
-}
-
-.animate{
-  &__show{
-    animation: changeSlide 1.2s;
-    display: block;
-  }
-  &__hide{
-    animation: changeSlide 1.2s;
-    display: none;
-  }
-}
-
-@keyframes changeSlide {
-  0%{
-    opacity: 0;
-  }
-  100%{
-    opacity: 1;
-    
   }
 }
