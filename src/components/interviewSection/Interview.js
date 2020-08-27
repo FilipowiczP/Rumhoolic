@@ -31,12 +31,12 @@ const Interview = () =>{
                         <div className="interview__box">
                             <h1 className="interview__title">{text.title}</h1>
                             <h2 className="interview__text">{text.start}</h2>
-                             {text.content.map(({question, answer})=>{
+                             {text.content.map(({question, answer}, i)=>{
                                 return (
-                                    <>
+                                    <div key={i}>
                                         <p className="interview__text interview__question ">{question}</p>
                                         <p className="interview__text">{answer}</p>
-                                    </>
+                                    </div>
                                 )
                             })}
                         </div>

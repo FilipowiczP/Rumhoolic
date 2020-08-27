@@ -38,7 +38,7 @@ const Tasting = () =>{
             <p className="tasting__slider" onClick={handlePrev}>Poprz<span className="tasting__color">edni</span></p>
             {tastingContent.map(({id, fotos, text}) =>{
                 return (
-                    <div className="tasting__content" key={id} data-tasting={id} style={{display: contentSlider == id ? "block" : "none"}}>
+                    <div className={contentSlider == id ? "tasting__content animate__show" : "tasting__content animate__hide"} key={id} data-tasting={id} >
                         <h1 className="tasting__title">{text.name}</h1>
                         <div className="tasting__content__box">
                             <img className="tasting__foto" src={fotos[slider]}/>

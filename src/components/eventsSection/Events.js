@@ -30,8 +30,8 @@ const Events = () =>{
                     <img src={foto} alt="foto" className="events__foto" />
                     <div className="events__content__box">
                         <h1 className="events__title">{text.title}</h1>
-                        {text.paragraph.map(({paragraph})=>{
-                            return <p className="events__text">{paragraph}</p>
+                        {text.paragraph.map(({paragraph}, i)=>{
+                            return <p className="events__text" key={i}>{paragraph}</p>
                         })}
                     </div>
                 </div>
