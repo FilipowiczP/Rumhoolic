@@ -79,7 +79,7 @@ const Header = () =>{
                         <ul className="header__navigation__list">
                             <li className="header__navigation__list__element"><a href="#main">Głó<span className="contact__color">wna</span></a></li>
                             <li className="header__navigation__list__element"><a href="#rums">Ru<span className="contact__color">my</span></a></li>
-                            <li className="header__navigation__list__element"><a href="#rums">Wydarz<span className="contact__color">enia</span></a></li>
+                            <li className="header__navigation__list__element"><a href="#events">Wydarz<span className="contact__color">enia</span></a></li>
                             <li className="header__navigation__list__element"><a href="#interview">Wywi<span className="contact__color">ady</span></a></li>
                             <li className="header__navigation__list__element"><a href="#tasting">Degus<span className="contact__color">tacja</span></a></li>
                             <li className="header__navigation__list__element"><a href="#footer">Kont<span className="contact__color">akt</span></a></li>

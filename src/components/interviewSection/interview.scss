@@ -15,6 +15,11 @@
   &__slider{
     @include nextPrev;
   }
+  &__sliders{
+    padding: 0 50px;
+    display: flex;
+    justify-content: space-between;
+  }
   &__color{
     color: $second-content;
   }

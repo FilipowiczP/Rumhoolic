@@ -26,7 +26,7 @@ const Events = () =>{
                 <p className="events__slider" onClick={handlePrev}>Poprz<span className="events__color">edni</span></p>
                 {eventContent.map(({id, foto, text})=>{
                     return (
-                    <div key={id} className={contentSlider == id ? "events__content animate__show" : "events__content animate__hide"}>
+                    <div key={id} className={contentSlider === id ? "events__content animate__show" : "events__content animate__hide"}>
                         <img src={foto} alt="foto" className="events__foto" />
                         <div className="events__content__box">
                             <h1 className="events__title">{text.title}</h1>
@@ -43,11 +43,13 @@ const Events = () =>{
     }else{
         return(
             <section id="events" className="events">
-                <p className="events__slider" onClick={handleNext}>Kolej<span className="events__color">ne</span></p>
-                <p className="events__slider" onClick={handlePrev}>Poprz<span className="events__color">edni</span></p>
+                <div className="events__sliders">
+                    <p className="events__slider" onClick={handleNext}>Kolej<span className="events__color">ne</span></p>
+                    <p className="events__slider" onClick={handlePrev}>Poprz<span className="events__color">edni</span></p>
+                </div>
                 {eventContent.map(({id, foto, text})=>{
                     return (
-                    <div key={id} className={contentSlider == id ? "events__content animate__show" : "events__content animate__hide"}>
+                    <div key={id} className={contentSlider === id ? "events__content animate__show" : "events__content animate__hide"}>
                         <img src={foto} alt="foto" className="events__foto" />
                         <div className="events__content__box">
                             <h1 className="events__title">{text.title}</h1>

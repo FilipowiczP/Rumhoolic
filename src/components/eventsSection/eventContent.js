@@ -1,6 +1,5 @@
 import text1 from "../content/events/1";
 import foto1 from "./images/1.jpg";
-import text from "../content/events/1";
 
 const eventContent = [
     {

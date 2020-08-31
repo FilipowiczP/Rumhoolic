@@ -38,7 +38,7 @@ const Tasting = () =>{
                 <p className="tasting__slider" onClick={handlePrev}>Poprz<span className="tasting__color">edni</span></p>
                 {tastingContent.map(({id, fotos, text}) =>{
                     return (
-                        <div className={contentSlider == id ? "tasting__content animate__show" : "tasting__content animate__hide"} key={id} data-tasting={id} >
+                        <div className={contentSlider === id ? "tasting__content animate__show" : "tasting__content animate__hide"} key={id} data-tasting={id} >
                             <h1 className="tasting__title">{text.name}</h1>
                             <div className="tasting__content__box">
                                 <img className="tasting__foto" src={fotos[slider]}/>
@@ -60,11 +60,13 @@ const Tasting = () =>{
     }else{
         return(
             <section id="tasting" className="tasting">
-                <p className="tasting__slider" onClick={handleNext}>Kolej<span className="tasting__color">ny</span></p>
-                <p className="tasting__slider" onClick={handlePrev}>Poprz<span className="tasting__color">edni</span></p>
+                <div className="tasting__sliders">
+                    <p className="tasting__slider" onClick={handleNext}>Kolej<span className="tasting__color">ny</span></p>
+                    <p className="tasting__slider" onClick={handlePrev}>Poprz<span className="tasting__color">edni</span></p>
+                </div>
                 {tastingContent.map(({id, fotos, text}) =>{
                     return (
-                        <div className={contentSlider == id ? "tasting__content animate__show" : "tasting__content animate__hide"} key={id} data-tasting={id} >
+                        <div className={contentSlider === id ? "tasting__content animate__show" : "tasting__content animate__hide"} key={id} data-tasting={id} >
                             <h1 className="tasting__title">{text.name}</h1>
                             <div className="tasting__content__box">
                                 <img className="tasting__foto" src={fotos[slider]}/>

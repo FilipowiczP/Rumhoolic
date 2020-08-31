@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import React, {useState} from "react";
 import './interview.scss';
 import interviews from "./interviewContent";
 
@@ -26,7 +26,7 @@ const Interview = () =>{
                 {interviews.map(({id, foto, text})=>{
                     return(
                         
-                        <div key={id} className={contentSlider == id ? "interview__content animate__show" : "interview__content animate__hide"}>
+                        <div key={id} className={contentSlider === id ? "interview__content animate__show" : "interview__content animate__hide"}>
                             <div className="interview__box">
                                 <h1 className="interview__title">{text.title}</h1>
                                 <h2 className="interview__text">{text.start}</h2>
@@ -49,12 +49,14 @@ const Interview = () =>{
     }else{
         return(
             <section id="interview" className="interview">
-            <p className="interview__slider" onClick={handleNext}>Kolej<span className="interview__color">ny</span></p>
-            <p className="interview__slider" onClick={handlePrev}>Poprz<span className="interview__color">edni</span></p>
+                <div className="interview__sliders">
+                    <p className="interview__slider" onClick={handleNext}>Kolej<span className="interview__color">ny</span></p>
+                    <p className="interview__slider" onClick={handlePrev}>Poprz<span className="interview__color">edni</span></p>
+                </div>
             {interviews.map(({id, foto, text})=>{
                 return(
                     
-                    <div key={id} className={contentSlider == id ? "interview__content animate__show" : "interview__content animate__hide"}>
+                    <div key={id} className={contentSlider === id ? "interview__content animate__show" : "interview__content animate__hide"}>
                         <div className="interview__box">
                             <h1 className="interview__title">{text.title}</h1>
                             <p className="interview__text">{text.start}</p>
