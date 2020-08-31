@@ -19,6 +19,13 @@
       font-size: 1rem;
     }
   }
+  &__box{
+    display: flex;
+    align-items: center;
+    &__text{
+      color: $third-content;
+    }
+  }
 }
 .instagram{
   text-decoration: none;
