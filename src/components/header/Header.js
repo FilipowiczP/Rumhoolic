@@ -76,12 +76,12 @@ const Header = () =>{
                     </div>
                     <nav className={active ? "header__navigation active__navigation" : "header__navigation"}>
                         <ul className="header__navigation__list">
-                            <li className="header__navigation__list__element"><a href="#main">Głó<span className="contact__color">wna</span></a></li>
-                            <li className="header__navigation__list__element"><a href="#rums">Ru<span className="contact__color">my</span></a></li>
-                            <li className="header__navigation__list__element"><a href="#events">Wydarz<span className="contact__color">enia</span></a></li>
-                            <li className="header__navigation__list__element"><a href="#interview">Wywi<span className="contact__color">ady</span></a></li>
-                            <li className="header__navigation__list__element"><a href="#tasting">Degus<span className="contact__color">tacja</span></a></li>
-                            <li className="header__navigation__list__element"><a href="#footer">Kont<span className="contact__color">akt</span></a></li>
+                            <Link className="header__navigation__list__element" activeClass="active" to="main" smooth={true} offset={-100} duration={500}>Głó<span className="contact__color">wna</span></Link>
+                            <Link className="header__navigation__list__element" activeClass="active" to="rums" smooth={true} offset={-150} duration={500}>Ru<span className="contact__color">my</span></Link>
+                            <Link className="header__navigation__list__element" activeClass="active" to="events" smooth={true} offset={-250} duration={500}>Wydarz<span className="contact__color">enia</span></Link>
+                            <Link className="header__navigation__list__element" activeClass="active" to="interview" smooth={true} offset={-210} duration={500}>Wywi<span className="contact__color">ady</span></Link>
+                            <Link className="header__navigation__list__element" activeClass="active" to="tasting" smooth={true} offset={-180} duration={500}>Degus<span className="contact__color">tacja</span></Link>
+                            <Link className="header__navigation__list__element" activeClass="active" to="footer" smooth={true} offset={-100} duration={500}>Kont<span className="contact__color">akt</span></Link>
                         </ul>
                     </nav>
                 </header>

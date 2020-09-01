@@ -66,14 +66,15 @@
         list-style: none;
         overflow: hidden;
         margin: 10px 20px;
+        display: flex;
+        color: $third-content;
+        font-size: 2rem;
+        cursor: pointer;
         @include desktop{
-          cursor: pointer;
           position: relative;
           display: flex;
           align-content: center;
-          margin: 10px 30px;
-          color: $third-content;
-          font-size: 2rem;
+          margin: 10px 30px;       
           text-decoration: none;
           text-shadow:2px 2px 10px $third-content, 0 0 2rem $third-content;
           padding: 15px 15px;
