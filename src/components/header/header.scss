@@ -67,12 +67,11 @@
         overflow: hidden;
         margin: 10px 20px;
         @include desktop{
+          cursor: pointer;
           position: relative;
           display: flex;
           align-content: center;
           margin: 10px 30px;
-        }
-        a{
           color: $third-content;
           font-size: 2rem;
           text-decoration: none;

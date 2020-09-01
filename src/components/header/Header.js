@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import {Link} from "react-scroll";
 import './header.scss';
 import logo from './logo1.jpg';
 
@@ -18,49 +19,47 @@ const Header = () =>{
             <header className="header">
                 <nav className="header__navigation">
                     <ul className="header__navigation__list">
-                        <li className="header__navigation__list__element"><a href="#main">
+                        <Link className="header__navigation__list__element" activeClass="active" to="main" smooth={true} offset={-200} duration={500}>
                             <span className="animation"></span>
                             <span className="animation"></span>
                             <span className="animation"></span>
                             <span className="animation"></span>
-                            Głó<span className="contact__color">wna</span></a></li>
-                        <li className="header__navigation__list__element"><a href="#rums">
+                            Głó<span className="contact__color">wna</span></Link>
+                        <Link className="header__navigation__list__element" activeClass="active" to="rums" smooth={true} offset={-200} duration={500}>
                             <span className="animation"></span>
                             <span className="animation"></span>
                             <span className="animation"></span>
                             <span className="animation"></span>
-                            Ru<span className="contact__color">my</span></a>
-                        </li>  <li className="header__navigation__list__element"><a href="#events">
+                            Ru<span className="contact__color">my</span></Link>  
+                        <Link className="header__navigation__list__element" activeClass="active" to="events" smooth={true} offset={-100} duration={500}>
                         <span className="animation"></span>
                         <span className="animation"></span>
                         <span className="animation"></span>
                         <span className="animation"></span>
-                            Wydarz<span className="contact__color">enia</span></a></li>
+                            Wydarz<span className="contact__color">enia</span></Link>
                     </ul>
                 </nav>
                 <img src={logo} alt="logo" width="300px" height="300px" className="header__logo"/>
                 <nav className="header__navigation">
                     <ul className="header__navigation__list">
-                        <li className="header__navigation__list__element"><a href="#interview">
+                        <Link className="header__navigation__list__element" activeClass="active" to="interview" smooth={true} offset={-50} duration={500}>
                             <span className="animation"></span>
                             <span className="animation"></span>
                             <span className="animation"></span>
                             <span className="animation"></span>
-                            Wywi<span className="contact__color">ady</span>
-                        </a></li>
-                        <li className="header__navigation__list__element"><a href="#tasting">
+                            Wywi<span className="contact__color">ady</span></Link>
+                        <Link className="header__navigation__list__element" activeClass="active" to="tasting" smooth={true} offset={-150} duration={500}>
                             <span className="animation"></span>
                             <span className="animation"></span>
                             <span className="animation"></span>
                             <span className="animation"></span>
-                            Degus<span className="contact__color">tacja</span>
-                        </a></li>
-                        <li className="header__navigation__list__element"><a href="#footer">
+                            Degus<span className="contact__color">tacja</span></Link>
+                        <Link className="header__navigation__list__element" activeClass="active" to="footer" smooth={true} offset={-100} duration={500}>
                             <span className="animation"></span>
                             <span className="animation"></span>
                             <span className="animation"></span>
                             <span className="animation"></span>
-                            Kont<span className="contact__color">akt</span></a></li>
+                            Kont<span className="contact__color">akt</span></Link>
                     </ul>
                 </nav>
             </header>
