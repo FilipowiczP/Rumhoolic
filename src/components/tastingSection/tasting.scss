@@ -36,9 +36,13 @@
     color: $second-content;
   }
   &__foto{
-    width: 600px;
-    height: 600px;
+    width: 400px;
+    height: 400px;
     object-fit: contain;
+    @include desktop{
+      width: 600px;
+      height: 600px; 
+    }
   }
   &__title{
     font-size: 1.8rem;
