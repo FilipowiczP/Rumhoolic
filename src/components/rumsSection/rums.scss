@@ -37,10 +37,14 @@
     }
   }
   &__content{
-    width: 200px;
-    height: 200px;
+    width: 120px;
+    height: 120px;
     cursor: pointer;
     margin: 10px;
+    @include desktop{
+      width: 200px;
+      height: 200px;
+    }
   }
   &__foto{
     width: 300px;
