@@ -36,8 +36,8 @@
     color: $second-content;
   }
   &__foto{
-    width: 400px;
-    height: 400px;
+    width: 350px;
+    height: 350px;
     object-fit: contain;
     @include desktop{
       width: 600px;
