@@ -2,6 +2,16 @@
 
 It's commercial order created for Rumholic. All funcitions are ready but the customer haven't enough contents. We invite you at rumholic.pl :)
 
+### `Technologies`
+
+* React
+   * react-scroll
+   * routing
+   * node-sass
+* Sass
+* RWD
+* Npm
+
 In the project directory, you can run:
 
 ### `npm start`
