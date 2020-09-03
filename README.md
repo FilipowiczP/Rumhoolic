@@ -1,6 +1,6 @@
 ### `General info`
 
-It's commercial order created for Rumholic. All funcitions are ready but the customer haven't enough contents. We invite you at rumholic.pl :)
+It's commercial order created for Rumholic. All funcitions are ready but the customer haven't enough contents. Please visit rumholic.pl :)
 
 ### `Technologies`
 
