@@ -22,3 +22,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.<br />
 You will also see any lint errors in the console.
 
+### `Desktop version`
+
+![rums](https://user-images.githubusercontent.com/66370279/92136793-bf04c300-ee0c-11ea-8da6-ef0504f8f7cb.png)
+
