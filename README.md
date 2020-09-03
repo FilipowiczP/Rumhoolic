@@ -26,3 +26,6 @@ You will also see any lint errors in the console.
 
 ![rums](https://user-images.githubusercontent.com/66370279/92136793-bf04c300-ee0c-11ea-8da6-ef0504f8f7cb.png)
 
+### `Mobile version`
+
+![rum](https://user-images.githubusercontent.com/66370279/92137784-e0b27a00-ee0d-11ea-9bf7-c8cce3dfd8e8.gif)
