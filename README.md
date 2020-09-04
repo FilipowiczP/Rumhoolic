@@ -5,11 +5,11 @@ It's commercial order created for Rumholic. All funcitions are ready but the cus
 ### `Technologies`
 
 * React
-   * react-scroll
-   * node-sass
 * Sass
 * RWD
 * Npm
+   * react-scroll
+   * node-sass
 
 In the project directory, you can run:
 
