@@ -6,7 +6,6 @@ It's commercial order created for Rumholic. All funcitions are ready but the cus
 
 * React
    * react-scroll
-   * routing
    * node-sass
 * Sass
 * RWD
