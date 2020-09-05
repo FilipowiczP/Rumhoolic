@@ -37,11 +37,7 @@ const Header = () =>{
                         <span className="animation"></span>
                         <span className="animation"></span>
                             Wydarz<span className="contact__color">enia</span></Link>
-                    </ul>
-                </nav>
-                <img src={logo} alt="logo" width="300px" height="300px" className="header__logo"/>
-                <nav className="header__navigation">
-                    <ul className="header__navigation__list">
+                        <img src={logo} alt="logo" width="300px" height="300px" className="header__logo"/>
                         <Link className="header__navigation__list__element" activeClass="active" to="interview" smooth={true} offset={-50} duration={500}>
                             <span className="animation"></span>
                             <span className="animation"></span>
