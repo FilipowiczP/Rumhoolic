@@ -53,8 +53,9 @@
     display: block;
     @include desktop{
       float: left;
-      width: 500px;
-      height: 500px;
+      width: 450px;
+      height: 450px;
+      margin: 0 20px;
     }
   }
   &__title{
