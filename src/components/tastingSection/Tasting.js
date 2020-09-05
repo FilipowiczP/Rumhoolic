@@ -61,8 +61,8 @@ const Tasting = () =>{
         return(
             <section id="tasting" className="tasting">
                 <div className="tasting__sliders">
-                    <p className="tasting__slider" onClick={handleNext}>Kolej<span className="tasting__color">ny</span></p>
                     <p className="tasting__slider" onClick={handlePrev}>Poprz<span className="tasting__color">edni</span></p>
+                    <p className="tasting__slider" onClick={handleNext}>Kolej<span className="tasting__color">ny</span></p>
                 </div>
                 {tastingContent.map(({id, fotos, text}) =>{
                     return (

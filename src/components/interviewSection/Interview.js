@@ -50,8 +50,8 @@ const Interview = () =>{
         return(
             <section id="interview" className="interview">
                 <div className="interview__sliders">
-                    <p className="interview__slider" onClick={handleNext}>Kolej<span className="interview__color">ny</span></p>
                     <p className="interview__slider" onClick={handlePrev}>Poprz<span className="interview__color">edni</span></p>
+                    <p className="interview__slider" onClick={handleNext}>Kolej<span className="interview__color">ny</span></p>
                 </div>
             {interviews.map(({id, foto, text})=>{
                 return(

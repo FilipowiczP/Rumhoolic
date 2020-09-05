@@ -19,9 +19,22 @@
     left: -100%;
     width: 100vw;
     padding: 50px 10px;
+    z-index: 2;
     @include desktop{
       height: 100vh;
       background: $main-color;
+    }
+    &__shadow{
+      position: absolute;
+      top: -100%;
+      left: 0;
+      width: 100vw;
+      height: 530vh;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: -1;
+      @include desktop{
+        height: 350vh;
+      }
     }
     &__hide{
       font-family: 'League Gothic';

@@ -25,6 +25,7 @@ const Rums = () =>{
     return(
         <section id="rums" className="rums">
             <div className="rums__info" style={{left: boxPosition}}>
+                <div className="rums__info__shadow"></div>
                 <p onClick={handleHide} className="rums__info__hide">Wst<span className="color__hide">ecz</span></p>
                 <img className="rums__foto" src={boxContent.secondFoto}/>
                 {boxContent && <h1 className="rums__title">{boxContent.text.name}</h1>}

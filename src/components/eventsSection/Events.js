@@ -44,8 +44,8 @@ const Events = () =>{
         return(
             <section id="events" className="events">
                 <div className="events__sliders">
-                    <p className="events__slider" onClick={handleNext}>Kolej<span className="events__color">ne</span></p>
                     <p className="events__slider" onClick={handlePrev}>Poprz<span className="events__color">edni</span></p>
+                    <p className="events__slider" onClick={handleNext}>Kolej<span className="events__color">ne</span></p>
                 </div>
                 {eventContent.map(({id, foto, text})=>{
                     return (
