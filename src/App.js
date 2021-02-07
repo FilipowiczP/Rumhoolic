@@ -5,8 +5,8 @@ import Main from "./components/mainSection/Main";
 import Rums from "./components/rumsSection/Rums";
 import Tasting from "./components/tastingSection/Tasting";
 import Footer from "./components/footer/Footer";
-// import Events from "./components/eventsSection/Events";
-// import Interview from "./components/interviewSection/Interview";
+import Events from "./components/eventsSection/Events";
+import Interview from "./components/interviewSection/Interview";
 
 
 const App = () =>{
@@ -17,8 +17,8 @@ const App = () =>{
         <main>
             <Main />
             <Rums />
-            {/* <Events /> */}
-            {/* <Interview /> */}
+            <Events />
+            <Interview />
             <Tasting />
         </main>
         <Footer />
